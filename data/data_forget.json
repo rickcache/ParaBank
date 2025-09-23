@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "firstname": "Rick",
+      "lastname": "Biswas",
+      "address": "11 No School Road",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "zip": "700122",
+      "ssn": "81246982"
+    }
+  ]
+}

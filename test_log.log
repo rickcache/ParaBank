@@ -1,0 +1,64 @@
+2025-09-23 10:52:56,494 - INFO - ==== Test Session Started ====
+2025-09-23 10:52:57,974 - INFO - Opening Parabank Website
+2025-09-23 10:53:01,218 - INFO - Entering username and password
+2025-09-23 10:53:01,310 - INFO - Clicking login button
+2025-09-23 10:53:02,526 - INFO - Verifying account overview success
+2025-09-23 10:53:02,528 - INFO - Account Overview test passed
+2025-09-23 10:53:05,895 - INFO - Opening Parabank Website
+2025-09-23 10:53:09,287 - INFO - Entering username and password
+2025-09-23 10:53:09,379 - INFO - Clicking logging button
+2025-09-23 10:53:10,887 - INFO - Filling Form for Bill Pay
+2025-09-23 10:53:11,346 - INFO - Verifying Bill Payment test
+2025-09-23 10:53:11,349 - INFO - Bill Pay test passed
+2025-09-23 10:53:14,646 - INFO - Opening Parabank Website
+2025-09-23 10:53:17,388 - INFO - Filling Forget password form
+2025-09-23 10:53:18,086 - INFO - Verifing forget pasword success
+2025-09-23 10:53:18,141 - INFO - Forget password test passed
+2025-09-23 10:53:21,444 - INFO - Opening Parabank website
+2025-09-23 10:53:23,660 - INFO - Entering username and password
+2025-09-23 10:53:23,752 - INFO - Clicking login button
+2025-09-23 10:53:24,663 - INFO - Verifying login success
+2025-09-23 10:53:24,667 - INFO - Login test passed
+2025-09-23 10:53:28,046 - INFO - Opening Parabank website
+2025-09-23 10:53:30,543 - INFO - Entering username and website
+2025-09-23 10:53:32,289 - INFO - Verifying logout success
+2025-09-23 10:53:32,293 - INFO - Logout test passed
+2025-09-23 10:53:35,576 - INFO - Opening Parabank website
+2025-09-23 10:53:37,745 - INFO - Entering username and password
+2025-09-23 10:53:37,837 - INFO - Clicking login button
+2025-09-23 10:53:38,719 - INFO - Opening new button
+2025-09-23 10:53:40,074 - INFO - Clicking open button
+2025-09-23 10:53:40,115 - INFO - Verifying New account success
+2025-09-23 10:53:40,117 - INFO - New account test passed
+2025-09-23 10:53:43,488 - INFO - Opening Parabank website
+2025-09-23 10:53:45,388 - INFO - Entering username and password
+2025-09-23 10:53:45,481 - INFO - Clicking login button
+2025-09-23 10:53:47,736 - INFO - Verifying New account success
+2025-09-23 10:53:47,738 - INFO - New account test passed
+2025-09-23 10:53:51,062 - INFO - Opening Parabank Website
+2025-09-23 10:53:53,818 - INFO - Filling form for registering test
+2025-09-23 10:53:54,206 - INFO - Entering username and password
+2025-09-23 10:53:54,349 - INFO - Clicking registering
+2025-09-23 10:53:54,733 - INFO - Verifying registering test success
+2025-09-23 10:53:54,832 - ERROR - Test test_registration[John-Doe-123 Elm Street-Springfield-Illinois-62704-217-555-1234-123-45-6789-jjjohnndoeeeeeeeee-Pass@123-Pass@123] FAILED
+2025-09-23 10:53:58,134 - INFO - Opening Parabank website
+2025-09-23 10:54:00,094 - INFO - Entering username and password
+2025-09-23 10:54:00,189 - INFO - Clicking logging button
+2025-09-23 10:54:01,419 - INFO - Entering loan amount & down payment amoubt
+2025-09-23 10:54:01,532 - INFO - Clicking Apply Button
+2025-09-23 10:54:01,569 - INFO - Verifying loan request button
+2025-09-23 10:54:01,572 - INFO - Loan request test passed
+2025-09-23 10:54:04,851 - INFO - Opening Parabank website
+2025-09-23 10:54:07,119 - INFO - Entering username and password
+2025-09-23 10:54:07,212 - INFO - Clicking login button
+2025-09-23 10:54:08,514 - INFO - Entering transfer amount
+2025-09-23 10:54:08,576 - INFO - Clicking Transfer button
+2025-09-23 10:54:08,623 - INFO - Verifing transfer fund success
+2025-09-23 10:54:08,625 - INFO - Transfer fund test passed
+2025-09-23 10:54:11,994 - INFO - Opening Parabank website
+2025-09-23 10:54:13,782 - INFO - Entering username and password
+2025-09-23 10:54:13,878 - INFO - Clicking login button
+2025-09-23 10:54:15,118 - INFO - Filling form for updating contact
+2025-09-23 10:54:15,508 - INFO - Verifying Contact Update test success
+2025-09-23 10:54:15,510 - INFO - Contact Update test passed
+2025-09-23 10:54:17,712 - INFO - ==== Test Session Finished ====
