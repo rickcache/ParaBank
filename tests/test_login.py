@@ -3,19 +3,18 @@ from pages.page_login import LoginPage
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from file_data_loader import DataLoad
 import json
 import logging
 
-def load_json_data():
-    with open("data/data_login.json") as f:
-        data = json.load(f)
-        return [(item["username"], item["password"]) for item in data]
-
-    
+@pytest.mark.order(2)    
 @pytest.mark.login
-@pytest.mark.parametrize("username, password", load_json_data())    
+@pytest.mark.parametrize(
+    "username, password", 
+    DataLoad().json_load_login("data/data_login.json")
+    )    
 def test_login(driver, username, password):
-    login_page = LoginPage(driver) #Fixture of the Yield File
+    login_page = LoginPage(driver) 
     
     
     logging.info("Opening Parabank website") 

@@ -72,7 +72,7 @@ This project is primarily for learning, practice, and freelance showcase purpose
 
 You can clone and modify it for your own practice projects
 
-The ParaBank site resets periodically, so test data might need refreshing
+The Qafox site resets periodically, so test data might need refreshing
 ## Author
 
 - [@rickcache](https://www.github.com/iamrexx)

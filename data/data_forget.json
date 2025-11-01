@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "firstname": "Rick",
-      "lastname": "Biswas",
-      "address": "11 No School Road",
-      "city": "Kolkata",
-      "state": "West Bengal",
-      "zip": "700122",
-      "ssn": "81246982"
-    }
+      "firstname": "Dixxie",
+      "lastname": "Scott",
+      "address": "123 Elm Street",
+      "city": "Springfield",
+      "state": "Illinois",
+      "zip": "62704",
+      "ssn": "123-45-6789"
+    } 
   ]
 }

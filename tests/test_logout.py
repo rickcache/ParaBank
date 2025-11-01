@@ -5,9 +5,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.common.by import By
 import logging
+from file_data_loader import DataLoad
 
+@pytest.mark.order(3)
 @pytest.mark.logout
-def test_logout(driver):
+@pytest.mark.parametrize(
+    "username, password", 
+    DataLoad().json_load_login("data/data_login.json")
+    )    
+def test_logout(driver, username, password):
     
     logout_page = LogoutPage(driver)
     login_page = LoginPage(driver)
@@ -16,8 +22,8 @@ def test_logout(driver):
     driver.get("https://parabank.parasoft.com/parabank/index.htm")
     
     logging.info("Entering username and website")
-    login_page.enter_username("BOB")
-    login_page.enter_password("OKOKOK")
+    login_page.enter_username(username)
+    login_page.enter_password(password)
     login_page.click_login()
     
     WebDriverWait(driver, 10).until(

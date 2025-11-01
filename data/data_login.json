@@ -1,6 +1,8 @@
-[
-  {
-    "username": "BOB",
-    "password": "OKOKOK"
-  }
-]
+{
+  "users": [
+    {
+    "username": "dixie_scott",
+    "password": "dixie123"
+    }
+  ]
+}

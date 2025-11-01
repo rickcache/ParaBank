@@ -2,15 +2,16 @@ import pytest
 from selenium.webdriver.common.by import By
 from file_data_loader import DataLoad
 from pages.page_forget_ps import Forget_Password
-from pages.page_login import LoginPage
 import logging
+import time
 
-@pytest.mark.forget_ps
+@pytest.mark.forget(4)
+
 @pytest.mark.parametrize(
     "firstname,lastname,address,city,state,zip,ssn",
     DataLoad().json_load_forget("data/data_forget.json")
 )
-
+@pytest.mark.xfail(reason="Site stores data for a temporary time.")
 def test_forget_ps(driver,firstname,lastname,address,city,state,zip,ssn):
     forget_password = Forget_Password(driver)
     
@@ -33,5 +34,6 @@ def test_forget_ps(driver,firstname,lastname,address,city,state,zip,ssn):
     
     logging.info("Verifing forget pasword success")
     assert expected_message in driver.page_source
+    time.sleep(10)
     logging.info("Forget password test passed")
     

@@ -2,10 +2,16 @@ import pytest
 from pages.page_login import LoginPage
 from pages.page_update_contact import ContactUpdate
 from selenium.webdriver.common.by import By
+from file_data_loader import DataLoad
 import logging
 
+@pytest.mark.order(10)
 @pytest.mark.contact_update
-def test_contact_update(driver):
+@pytest.mark.parametrize(
+    "username, password", 
+    DataLoad().json_load_login("data/data_login.json")
+    )    
+def test_contact_update(driver, username, password):
     login = LoginPage(driver)
     update = ContactUpdate(driver)
     
@@ -13,8 +19,8 @@ def test_contact_update(driver):
     driver.get("https://parabank.parasoft.com/parabank/index.htm")
     
     logging.info("Entering username and password")
-    login.enter_username("BOB")
-    login.enter_password("OKOKOK")
+    login.enter_username(username)
+    login.enter_password(password)
     logging.info("Clicking login button")
     login.click_login()
     

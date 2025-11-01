@@ -2,14 +2,15 @@ import pytest
 from file_data_loader import DataLoad
 from pages.page_register import Register
 from selenium.webdriver.common.by import By
+from file_data_loader import DataLoad
 import logging
 
+@pytest.mark.order(1)
 @pytest.mark.registration
 @pytest.mark.parametrize(
     "firstname,lastname,address, city,state,zip,phone,ssn,username,password,c_ps",
     DataLoad().json_load_regi("data/data_register.json")
 )
-
 def test_registration(driver, firstname, lastname, address, city, state, zip, phone, ssn, username, password, c_ps ):
     register_page = Register(driver)
     

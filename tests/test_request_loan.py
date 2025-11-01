@@ -3,9 +3,15 @@ from pages.page_login import LoginPage
 from pages.page_request_loan import RequestLoan
 from selenium.webdriver.common.by import By
 import logging
+from file_data_loader import DataLoad
 
+@pytest.mark.order(9)
 @pytest.mark.request_loan
-def test_request_loan(driver):
+@pytest.mark.parametrize(
+    "username, password", 
+    DataLoad().json_load_login("data/data_login.json")
+    )    
+def test_request_loan(driver, username, password):
     login = LoginPage(driver)
     request = RequestLoan(driver)
     
@@ -13,8 +19,8 @@ def test_request_loan(driver):
     driver.get("https://parabank.parasoft.com/parabank/index.htm")
     
     logging.info("Entering username and password")
-    login.enter_username("BOB")
-    login.enter_password("OKOKOK")
+    login.enter_username(username)
+    login.enter_password(password)
     logging.info("Clicking logging button")
     login.click_login()
     

@@ -40,3 +40,16 @@ class DataLoad:
             for item in data["users"]  
     ]
  
+ 
+    
+    def json_load_login(self, file_name):
+        with open(file_name) as f:
+            data = json.load(f)
+            return [
+                (
+                
+                    item["username"], 
+                    item["password"] 
+                )      
+            for item in data["users"]  
+    ] 

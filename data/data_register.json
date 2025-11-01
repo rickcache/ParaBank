@@ -1,17 +1,17 @@
 {
   "users": [
     {
-      "firstname": "John",
-      "lastname": "Doe",
+      "firstname": "Pixxie",
+      "lastname": "Scott",
       "address": "123 Elm Street",
       "city": "Springfield",
       "state": "Illinois",
       "zip": "62704",
       "phone": "217-555-1234",
       "ssn": "123-45-6789",
-      "username": "jjjohnndoeeeeeeeee",
-      "password": "Pass@123",
-      "c_ps": "Pass@123"
+      "username": "pixie_scott",
+      "password": "pixie123",
+      "c_ps": "pixie123"
     }
   ]
 }
